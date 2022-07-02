@@ -26,7 +26,7 @@ public class RestApplication {
     CommandLineRunner runner(ProductRepository productRepository) {
         return args -> {
             
-            Product product1 = new Product("Xbox 360");
+            Product product1 = new Product("Xbox One");
             product1.setPrice(299.00);
             product1.setImage("/images/xbox360.jpg");
             productRepository.save(product1);
