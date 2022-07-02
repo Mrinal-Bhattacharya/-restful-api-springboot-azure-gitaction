@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'AzureAIM'
+          app-name: 'azureaim(stage)'
           slot-name: 'stage'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_267E33C8B9DD42358AC9F98C6C7527E7 }}
           package: '*.jar'
